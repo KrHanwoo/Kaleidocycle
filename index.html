@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"
+    integrity="sha512-9KkIqdfN7ipEW6B6k+Aq20PV31bjODg4AA52W+tYtAE0jE0kMx49bjJ3FgvS56wzmyfMUHbQ4Km2b7l9+Y/+Eg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.css"
+    integrity="sha512-bs9fAcCAeaDfA4A+NiShWR886eClUcBtqhipoY5DM60Y1V3BbVQlabthUBal5bq8Z8nnxxiyb1wfGX2n76N1Mw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>칼레이도사이클</title>
+  <script src="kaleido.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="center title">
+    <span>칼레이도사이클</span>
+    <span>Kaleidocycle</span>
+  </div>
+
+  <div id="buttons"></div>
+
+  <div class="center btns">
+    <button id="generateBtn" class="btn" onclick="generateImage()" disabled>생성</button>
+  </div>
+  
+  <div id="crop" class="hidden">
+    <div class="center cropinfo">
+      <span>이미지 자르기</span>
+    </div>
+    <div class="cropper-wrapper">
+      <img id="cropper">
+    </div>
+    <div>
+      <button onclick="resetCrop()" class="btn resetBtn">초기화</button>
+      <button onclick="cropEnd()" class="btn confirmBtn">완료</button>
+    </div>
+  </div>
+</body>
+
+</html>
